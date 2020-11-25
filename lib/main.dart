@@ -1,10 +1,14 @@
+import 'package:barcode_search/future_search_example.dart';
 import 'package:barcode_search/widgets/product_search.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MaterialApp(
-    home: BarcodeSearch(),
-  ));
+  runApp(
+    MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: BarcodeSearch(),
+    ),
+  );
 }
 
 class BarcodeSearch extends StatelessWidget {
@@ -23,8 +27,10 @@ class BarcodeSearch extends StatelessWidget {
         ],
       ),
       body: Center(
-        child: Text(
-          'Product Catalogue Screen',
+        child: ElevatedButton(
+          child: Text('FUTURE search example'),
+          onPressed: () => Navigator.of(context).push(
+              MaterialPageRoute(builder: (context) => FutureSearchExample())),
         ),
       ),
     );

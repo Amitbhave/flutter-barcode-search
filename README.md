@@ -9,3 +9,5 @@ Flutter - Search using Barcode Scanner
 You can read more about this in article [here](https://medium.com/@amitbhave10/flutter-search-using-barcode-scan-d23adc7b138c).
 
 Show your :heart: and :star: the repo, if you found it helpful.
+
+## Updated example with building product list, with Future<T> (You can make actual backend API call here)
